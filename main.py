@@ -18,3 +18,4 @@ for data in allgame:
         discount = discount_pct.text.strip() if discount_pct else 'Нет скидки'
 
         print(f'Игра: {game_name} | Цена: {price} | Скидка: {discount}')
+input("Нажмите любую кнопку для завершения: ")
