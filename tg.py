@@ -63,5 +63,7 @@ def process_search(message, games):
             )
     else:
         bot.send_message(message.chat.id, "Игра не найдена. Попробуйте другое название.")
-
+@bot.message_handler(func=lambda message: message.text == "Раздача Epic Games")
+def handle_hi(message):
+    bot.send_message(message.chat.id, "Здесь скоро будет раздача")
 bot.polling()
